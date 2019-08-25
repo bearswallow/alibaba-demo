@@ -1,12 +1,54 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# maven output directory
+target
+/build
+/dist
+javadocs
 
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
+# Eclipse files
+/bin
+.settings
+.classpath
+.project
+
+# IntelliJ files
+/.idea
+*.iml
+/atlassian-ide-plugin.xml
+/out/*
+
+# vscode
+.vscode
+
+# Log files
+*.log
+
+# Other files
+/test-output
+reloadtest.properties
+/scratch/
+testspy.forms
+*.swp
+.DS_Store
+/pom.xml.versionsBackup
+dependency-reduced-pom.xml
+.vagrant
+Berksfile.lock
+
+# bitronix transaction stuff
+*.tlog
+p6spy_xds
+
+# hsql
+/mem.*
+
+# build artifacts
+_build/
+
+# gradle
+.gradle
+
+# zsh gradle plugin
+.gradletasknamecache
+
+# vscode
+.vscode

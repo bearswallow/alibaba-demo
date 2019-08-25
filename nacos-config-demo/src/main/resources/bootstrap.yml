@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: nacos-config-demo
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+        file-extension: yml
+        group: ${spring.application.name}
+        prefix:
+        context-path: nacos
+        ext-config:
+          - data-id: com.pateo.alibaba.config.demo.DemoProperties.yml
+            group: ${spring.application.name}
+            refresh: true
